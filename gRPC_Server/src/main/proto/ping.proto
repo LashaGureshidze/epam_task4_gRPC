@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.epam.task4.stubs;
+
+option java_package = "com.epam.task4.stubs";
+option java_multiple_files = true;
+
+service PingService {
+  rpc ping(PingRequest) returns (PongResponse);
+}
+
+message PingRequest {
+  string message = 1;
+}
+
+message PongResponse {
+  string message = 1;
+}

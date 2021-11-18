@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.epam.task4.stubs;
+
+service PingService {
+  rpc ping(PingRequest) returns (PongResponse);
+}
+
+message PingRequest {
+  string message = 1;
+}
+
+message PongResponse {
+  string message = 1;
+}
